@@ -1,0 +1,138 @@
+/* Ajustes generales para que el tamaño incluya bordes y relleno. */
+* { box-sizing: border-box; }
+/* Fuente, color de texto y fondo general. */
+/* Define los estilos de este elemento. */
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #242424; background: #fff; }
+/* Define los estilos de este elemento. */
+a { color: inherit; text-decoration: none; }
+/* Barra superior con el logotipo y el menú. */
+/* Define los estilos de este elemento. */
+.encabezado { min-height: 76px; padding: 16px 7%; display: flex; align-items: center; justify-content: space-between; gap: 20px; background: #111; color: white; }
+/* Estilo del logotipo de la tienda. */
+/* Define los estilos de este elemento. */
+.logo { font-family: Georgia, serif; font-size: 29px; letter-spacing: 3px; font-weight: bold; }
+/* Define los estilos de este elemento. */
+.logo span { display: block; font: 9px Arial, sans-serif; letter-spacing: 4px; text-align: center; margin-top: 3px; }
+/* Distribución de los enlaces del menú. */
+/* Define los estilos de este elemento. */
+nav { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; font-size: 14px; }
+/* Define los estilos de este elemento. */
+nav a:hover, .nota a:hover { color: #c5a46d; }
+/* Franja que saluda al usuario que inició sesión. */
+/* Define los estilos de este elemento. */
+.bienvenida { background-color: #f7f3ec; color: #222; padding: 14px 7%; display: flex; justify-content: space-between; align-items: center; gap: 15px; border-bottom: 1px solid #e5dccd; font-size: 15px; }
+/* Botón para terminar la sesión. */
+/* Define los estilos de este elemento. */
+.cerrar-sesion { display: inline-block; background-color: #111; color: white; padding: 10px 16px; text-decoration: none; font-size: 13px; white-space: nowrap; }
+/* Define los estilos de este elemento. */
+.cerrar-sesion:hover { background-color: #b08d57; color: white; }
+/* Portada con fotografía y texto de bienvenida. */
+/* Define los estilos de este elemento. */
+.portada { 
+    /* Configura una propiedad visual del elemento. */
+    min-height: 450px; 
+    /* Configura una propiedad visual del elemento. */
+    display: flex; 
+    /* Configura una propiedad visual del elemento. */
+    align-items: center; 
+    /* Configura una propiedad visual del elemento. */
+    padding: 55px 9%; 
+    /* Reducimos la opacidad del degradado y alineamos la imagen a la derecha */
+    /* Continúa la regla de estilos. */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.3) 60%, transparent 100%), 
+    /* Configura una propiedad visual del elemento. */
+    url('portada.jpg') right center / cover no-repeat; 
+  /* Cierra este bloque de estilos. */
+  }
+  
+  /* Aumentamos el contraste del texto para que resalte */
+  /* Define los estilos de este elemento. */
+  .portada-texto { 
+    /* Configura una propiedad visual del elemento. */
+    max-width: 520px; 
+    /* Configura una propiedad visual del elemento. */
+    color: #ffffff; 
+    /* Configura una propiedad visual del elemento. */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  /* Cierra este bloque de estilos. */
+  }
+/* Define los estilos de este elemento. */
+.mini-titulo { color: #b08d57; letter-spacing: 3px; font-size: 11px; font-weight: bold; }
+/* Define los estilos de este elemento. */
+h1, h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: normal; }
+/* Define los estilos de este elemento. */
+.portada h1 { font-size: clamp(34px, 5vw, 52px); line-height: 1.12; margin: 15px 0; }
+/* Define los estilos de este elemento. */
+.portada p:not(.mini-titulo) { line-height: 1.7; }
+/* Estilo base para los botones. */
+/* Define los estilos de este elemento. */
+.boton { display: inline-block; border: 0; background: #b08d57; color: #fff; padding: 13px 22px; margin-top: 12px; cursor: pointer; font-size: 14px; text-align: center; }
+/* Define los estilos de este elemento. */
+.boton:hover { background: #8d6d3e; }
+/* Contenedor central del catálogo. */
+/* Define los estilos de este elemento. */
+.contenedor { max-width: 1120px; margin: auto; padding: 55px 24px 70px; }
+/* Define los estilos de este elemento. */
+.titulo-seccion { text-align: center; margin-bottom: 32px; }
+/* Define los estilos de este elemento. */
+.titulo-seccion h2 { font-size: 34px; margin: 10px 0; }
+/* Define los estilos de este elemento. */
+.titulo-seccion > p:last-child { color: #777; font-size: 14px; }
+/* Cuadrícula de tarjetas de productos. */
+/* Define los estilos de este elemento. */
+.productos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+/* Apariencia de cada tarjeta de producto. */
+/* Define los estilos de este elemento. */
+.tarjeta { border: 1px solid #eee; background: #fff; transition: transform .2s; }
+/* Define los estilos de este elemento. */
+.tarjeta:hover { transform: translateY(-4px); }
+/* Define los estilos de este elemento. */
+.tarjeta img { width: 100%; height: 260px; object-fit: cover; background: #f6f4f1; }
+/* Define los estilos de este elemento. */
+.tarjeta-info { padding: 18px; }
+/* Define los estilos de este elemento. */
+.tarjeta-info h3 { font-family: Georgia, serif; font-weight: normal; font-size: 20px; margin: 0 0 9px; }
+/* Define los estilos de este elemento. */
+.tarjeta-info p { min-height: 38px; font-size: 13px; line-height: 1.5; color: #777; }
+/* Define los estilos de este elemento. */
+.tarjeta-info strong { display: block; margin: 15px 0 5px; }
+/* Define los estilos de este elemento. */
+.boton-chico { padding: 10px 15px; }
+/* Pie de página. */
+/* Define los estilos de este elemento. */
+footer { background: #111; color: #ccc; text-align: center; padding: 22px; font-size: 12px; line-height: 1.6; }
+/* Fondo y posición de los formularios. */
+/* Define los estilos de este elemento. */
+.formulario-contenedor { min-height: calc(100vh - 76px); display: flex; justify-content: center; align-items: flex-start; padding: 45px 18px; background: #f7f5f1; }
+/* Caja blanca que contiene los campos del formulario. */
+/* Define los estilos de este elemento. */
+.formulario { background: #fff; padding: 32px; width: 100%; max-width: 480px; box-shadow: 0 5px 25px #0000000c; }
+/* Define los estilos de este elemento. */
+.formulario h1 { margin: 8px 0; font-size: 32px; }
+/* Define los estilos de este elemento. */
+.formulario > p:not(.mini-titulo):not(.mensaje-error):not(.nota) { color: #777; font-size: 14px; }
+/* Define los estilos de este elemento. */
+.formulario label { display: block; font-size: 13px; margin: 17px 0 7px; }
+/* Define los estilos de este elemento. */
+.formulario input, .formulario select, .formulario textarea { display: block; width: 100%; border: 1px solid #ddd; padding: 12px; font: inherit; background: #fff; border-radius: 0; }
+/* Define los estilos de este elemento. */
+.formulario input:focus, .formulario select:focus, .formulario textarea:focus { outline: 1px solid #b08d57; }
+/* Define los estilos de este elemento. */
+.formulario button { width: 100%; margin-top: 22px; }
+/* Define los estilos de este elemento. */
+.nota { font-size: 12px; color: #777; line-height: 1.6; }
+/* Define los estilos de este elemento. */
+.nota a { color: #8d6d3e; text-decoration: underline; }
+/* Mensaje que se muestra cuando hay un error. */
+/* Define los estilos de este elemento. */
+.mensaje-error { background: #fff0f0; color: #9b2222; padding: 10px; font-size: 13px; }
+/* Confirmación de pedido registrado. */
+/* Define los estilos de este elemento. */
+.mensaje-exito { background: #edf7ed; color: #256029; text-align: center; padding: 13px; }
+/* Define los estilos de este elemento. */
+.producto-resumen { display: flex; align-items: center; gap: 15px; padding: 12px 0; border-bottom: 1px solid #eee; }
+/* Define los estilos de este elemento. */
+.producto-resumen img { width: 82px; height: 82px; object-fit: cover; }
+/* Define los estilos de este elemento. */
+.producto-resumen p { color: #8d6d3e; margin-bottom: 0; }
+/* Ajustes para celulares y pantallas pequeñas. */
